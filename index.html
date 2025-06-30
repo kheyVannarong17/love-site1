@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <title>សារស្នេហ៍ពីចិត្ត</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6eb, #ffccf9);
+      font-family: "Khmer OS Siemreap", Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #d6336c;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      position: relative;
+      width: 120px;
+      height: 110px;
+      animation: pulse 1s infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 60px;
+      height: 100px;
+      background: #ff4d6d;
+      border-radius: 50px 50px 0 0;
+    }
+
+    .heart::before {
+      left: 60px;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    .heart::after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    .message {
+      font-size: 1.4em;
+      color: #b30059;
+      margin-top: 25px;
+      max-width: 400px;
+      line-height: 1.6em;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>សារស្នេហ៍ពីចិត្ត ❤️</h1>
+  <div class="heart"></div>
+  <div class="message">
+    អ្នកគឺជាមនុស្សពិសេសសម្រាប់ខ្ញុំ 💖<br/>
+    សូមអនុញ្ញាតឲ្យខ្ញុំស្រឡាញ់អ្នកបានទេ? ❤️
+  </div>
+</body>
+</html>
